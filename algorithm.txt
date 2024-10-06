@@ -1,0 +1,20 @@
+Algorithm:
+Initialize Counters:
+
+Set sentenceLength to 0.
+Set wordCount to 0.
+Set vowelsCount to 0.
+Define Vowels: "aeiou"
+
+Loop Through Each Character of the Sentence:
+
+For each character in the sentence:
+Increment lengthCounter by 1.
+If the character is a vowel (i.e., it exists in the defined vowels list), increment vowelCounter.
+If the character is a space and the next character is not a space (and it’s not the last character of the sentence), increment wordCounter.
+After the Loop:
+
+Since words are separated by spaces, add 1 to wordCounter to account for the last word (if the sentence is not empty).
+Return or Output the Results:
+
+Return the values of lengthCounter, wordCounter, and vowelCounter.
