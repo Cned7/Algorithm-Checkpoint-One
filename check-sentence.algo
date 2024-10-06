@@ -1,0 +1,22 @@
+ALGORITHM checkSentence
+VAR
+    const sentence = document.getElementById("practice-sentence").textContent;
+    const result = checkSentence(sentence);
+    let sentenceLength = 0;
+    let wordCount = 0;
+    let vowelsCount = 0;
+    const vowels = "aeiou";
+BEGIN
+    Loop Through Each Character of the Sentence:
+
+    For each character in the sentence:
+    Increment sentenceLength by 1.
+    If the character is a vowel (i.e., it exists in the defined vowels list), increment vowelsCount.
+    If the character is a space and the next character is not a space (and it’s not the last character of the sentence), increment wordCount.
+    After the Loop:
+
+    Since words are separated by spaces, add 1 to wordCounter to account for the last word (if the sentence is not empty).
+    Return or Output the Results:
+
+    Return the values of sentenceLength, wordCount, and vowelsCount.
+END
